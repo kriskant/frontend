@@ -26,6 +26,8 @@ public class CartController {
 	@RequestMapping(value="addToCart/{id}")
     public String addProductToCart(@PathVariable("id") int id, HttpSession session,Model model,RedirectAttributes attributes)
     {
+		
+		
     	int userId = (Integer) session.getAttribute("userid");
     	System.out.println("HELLO:"+userId);
     	int q=1;
