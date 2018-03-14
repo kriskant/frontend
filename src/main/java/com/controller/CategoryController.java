@@ -22,6 +22,7 @@ public class CategoryController {
 	@Autowired
 	private CategoryDAO categoryDAO;
 	
+	
 	@RequestMapping(value="/category",method=RequestMethod.GET)
 	public String insertCategory(@ModelAttribute("category") Category category,Model model,BindingResult result){
 		model.addAttribute("category",new Category());
